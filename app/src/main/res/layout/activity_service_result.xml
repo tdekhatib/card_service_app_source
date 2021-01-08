@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ma.hololstore.Activity.ViewCardDetialActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="أهلا بك محمد العمر "
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="3dp"
+
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:id="@+id/txt_shop_name"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تمت العملية بنجاح "
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_margin="3dp"
+
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سيتم اعلام الزبون بالتنفيذ برسالة نصية  "
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/txt_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:inputType="phone"
+                android:enabled="false"
+                android:gravity="center"
+                android:id="@+id/txt_client_eshtrak"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:hint="رقم الاشتراك"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/txt_shape"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:inputType="phone"
+                android:enabled="false"
+                android:gravity="center"
+                android:id="@+id/txt_client_mobile"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:hint="رقم الزبون"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:weightSum="10"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:background="@color/white"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:id="@+id/item_service_name"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/item_request_serial"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:padding="7dp"
+                    android:text="رقم البطاقة : تم ارساله برسالة للزبون"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_card_buyer_price"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="7dp"
+                    android:text="مبلغ العملية للزبون"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+
+                android:layout_height="40dp"
+                android:padding="7dp"
+                android:text="شكرا لاستخدام خدماتنا"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+         android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+             android:textColor="@color/white"
+
+            android:id="@+id/bt_end_seller"
+            android:drawablePadding="3dp"
+            android:textSize="18sp"
+            android:layout_margin="1dp"
+            android:textStyle="bold"
+            android:text=" القائمة الرئيسية"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

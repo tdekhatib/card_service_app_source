@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="حجم الخط"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:id="@+id/txt_font_size"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:layoutDirection="rtl"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/layout_back"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="2dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_font_add"
+            android:src="@drawable/add"/>
+
+
+        <TextView
+            android:layout_width="90dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="5"
+            android:gravity="center"
+
+            android:id="@+id/txt_font_size_amount"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="2dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_font_minus"
+            android:src="@drawable/minus"/>
+
+
+
+    </LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+     android:text="اغلاق"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:id="@+id/bt_close_font_size_diloag"
+    android:textSize="18sp"/>
+
+
+</LinearLayout>

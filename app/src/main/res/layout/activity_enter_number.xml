@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EnterNumberActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/app_icon"
+        android:id="@+id/img"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_below="@id/img"
+        android:id="@+id/txt"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="ادخل رقم هاتف الحساب الذي تريد تحويل الرصيد له والذي مسجل في حلول ستور "/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:padding="10dp"
+        android:layout_below="@id/txt"
+        android:id="@+id/txt_phone_number"
+        android:layout_margin="15dp"
+        android:hint="رقم الهاتف "
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="بحث عن الزبون"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:id="@+id/bt_search"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        />
+</RelativeLayout>

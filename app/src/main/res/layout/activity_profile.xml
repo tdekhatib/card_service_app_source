@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:padding="15sp"
+
+        android:layout_above="@id/bt_reqister_save"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txt_signup_username"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:hint="اسم المستخدم"
+                android:drawableRight="@drawable/username"
+                android:background="@drawable/txt_shape"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_height="50sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txt_signup_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:hint="الاسم الرباعي"
+                android:drawableRight="@drawable/username"
+                android:background="@drawable/txt_shape"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_height="50sp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txt_signup_mobile"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="phone"
+                android:hint="رقم الموبايل "
+                android:drawableRight="@drawable/mobile"
+                android:background="@drawable/txt_shape"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_height="50sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/txt_signup_address"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:hint="العنوان "
+                android:drawableRight="@drawable/location"
+                android:background="@drawable/txt_shape"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_height="50sp" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+
+                android:layout_height="50sp"
+                android:id="@+id/spiner_type"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/txt_shape"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حفظ البيانات"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/bt_reqister_save"
+        android:background="@color/colorPrimary"
+        />
+</RelativeLayout>

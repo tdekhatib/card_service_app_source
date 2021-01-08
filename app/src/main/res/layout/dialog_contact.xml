@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+   android:orientation="vertical"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="نص الرسالة"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:gravity="center"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:id="@+id/txt_contact_us"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_send_message"
+        android:text="ارسل"
+       android:background="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+
+        />
+</LinearLayout>

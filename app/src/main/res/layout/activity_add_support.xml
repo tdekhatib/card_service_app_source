@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="right" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عنوان المشكلة"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:gravity="right"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:id="@+id/txt_support_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تفاصيل المشكلة"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:gravity="right"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:id="@+id/txt_support_desc"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ابلاغ عن المشكلة"
+        android:id="@+id/bt_request_add_supports"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group   >
+        <item
+            android:id="@+id/nav_buy_cards"
+            android:icon="@drawable/buyproduct"
+            android:title="شراء بطاقة" />
+        <item
+            android:id="@+id/nav_my_sellers"
+            android:icon="@drawable/buyreport"
+            android:title="مشترياتي" />
+        <item
+            android:id="@+id/nav_request_rassed_list"
+            android:icon="@drawable/payment"
+            android:title="مدفوعاتي" />
+
+        <item
+            android:id="@+id/nav_send_money"
+            android:icon="@drawable/ic_menu_send"
+            android:title="تحويل رصيد" />
+
+        <item
+            android:id="@+id/nav_supports"
+            android:icon="@drawable/support"
+            android:title="الدعم الفني" />
+        <item
+            android:id="@+id/nav_add_support"
+            android:icon="@drawable/addsupport"
+            android:title="حل مشكلة" />
+
+
+
+        <item
+            android:id="@+id/nav_request_rassed"
+            android:icon="@drawable/payment"
+            android:title="طلب تحويل رصيد" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="بحث عن متجر" />
+        <item
+            android:id="@+id/nav_notifiation"
+            android:icon="@drawable/notification"
+            android:title="الاشعارات" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/username"
+            android:title="حسابي" />
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@drawable/password"
+            android:title="تغير كلمة المرور" />
+        <item
+            android:id="@+id/nav_print"
+            android:icon="@drawable/printer"
+            android:title="اختيار الطابعة" />
+
+    </group>
+
+    <item android:title="معلومات التواصل">
+        <menu>
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:title="راسلنا واتساب" />
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="شارك التطبيق" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/mail"
+                android:title="راسلنا" />
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/call"
+                android:title="اتصل بنا" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="تسجيل خروج" />
+        </menu>
+    </item>
+
+</menu>

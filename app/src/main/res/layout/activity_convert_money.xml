@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:id="@+id/txt"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="تحويل رصيد للحساب    "/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:padding="10dp"
+        android:layout_below="@id/txt"
+        android:id="@+id/txt_shop_name"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:padding="10dp"
+        android:layout_below="@id/txt_shop_name"
+        android:id="@+id/txt_shop_mobile"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:padding="10dp"
+        android:layout_below="@id/txt_shop_mobile"
+        android:id="@+id/txt_rassed_convert"
+        android:layout_margin="10dp"
+        android:hint="الرصيد المطلوب تحويله "
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:padding="10dp"
+        android:layout_below="@id/txt_rassed_convert"
+        android:id="@+id/txt_password"
+        android:layout_margin="10dp"
+        android:hint="كلمة المرور لحسابك "
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="تحويل الرصيد"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:id="@+id/bt_send_money"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        />
+</RelativeLayout>

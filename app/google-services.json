@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "624560674560",
+    "firebase_url": "https://holoolapp.firebaseio.com",
+    "project_id": "holoolapp",
+    "storage_bucket": "holoolapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624560674560:android:7fb2266ed64ff1d20145e5",
+        "android_client_info": {
+          "package_name": "com.ma.hololstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624560674560-k4s4nlhbpvkajpmskvnvg0vkpnbqs718.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqZwYNEsuNlgWjgyGIZV2nhzTAYyqhh_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624560674560-k4s4nlhbpvkajpmskvnvg0vkpnbqs718.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="أهلا بك محمد العمر "
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_margin="3dp"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:id="@+id/txt_shop_name"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تأكيد عملية الشراء "
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ادخل رقم الاشتراك من أجل طلب الخدمة  "
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="أدخل  رقم موبايل  الزبون لارسال نتيجة الخدمة له  "
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/txt_shape"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:inputType="phone"
+        android:gravity="center"
+        android:id="@+id/txt_client_eshtrak"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:hint="رقم الاشتراك"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/txt_shape"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:inputType="phone"
+        android:gravity="center"
+        android:id="@+id/txt_client_mobile"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:hint="رقم الزبون"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:background="@color/white"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/item_service_name"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/item_service_price"
+                android:layout_width="match_parent"
+                android:gravity="center"
+
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:padding="7dp"
+                android:text="السعر للبائع 200 دينار"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="40sp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:layout_weight="5"
+            android:id="@+id/bt_buy_service"
+            android:textColor="@color/white"
+            android:text="طلب الخدمة"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:layout_weight="5"
+            android:id="@+id/bt_cancel_buy_service"
+            android:textColor="@color/white"
+            android:text="الغاء"
+            />
+
+    </LinearLayout>
+</LinearLayout>

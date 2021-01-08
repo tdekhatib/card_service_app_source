@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ma.hololstore.Activity.ViewCardDetialActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/lay"
+    >
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:textDirection="rtl"
+        android:layoutDirection="rtl"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تمت العملية بنجاح "
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:weightSum="10"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_card_name"
+                    android:background="@color/white"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:id="@+id/item_card_name"
+                    android:textStyle="bold"
+                    />
+            <TextView
+                 android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/item_card_serial"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.3"
+                android:lineSpacingExtra="6dp"
+
+                android:padding="7dp"
+                android:text="رقم البطاقة : تم ارساله برسالة للزبون"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_card_company_serial"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="7dp"
+                    android:text="السعر للبائع 200 دينار"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_card_my_serial"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="7dp"
+                    android:text="السعر للبائع 200 دينار"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <TextView
+             android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+             android:padding="7dp"
+            android:text="شكرا لاستخدام خدمات حلول ستور . "
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="9"
+         android:id="@+id/lay"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_weight="3"
+             android:textColor="@color/white"
+
+android:id="@+id/bt_end_seller"
+            android:drawablePadding="3dp"
+            android:textSize="18sp"
+            android:layout_margin="1dp"
+android:textStyle="bold"
+            android:text="طباعة"
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:layout_margin="1dp"
+
+            android:id="@+id/bt_share"
+            android:drawablePadding="3dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="مشاركة البطاقة"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:layout_margin="1dp"
+
+            android:id="@+id/bt_copy"
+            android:drawablePadding="3dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text=" نسخ البطاقة"
+
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

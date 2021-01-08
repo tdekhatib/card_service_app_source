@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    >
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+         android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_send_name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:hint="اسم محول الرصيد "
+            android:background="@drawable/txt_shape"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="50sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_request_money"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:hint="المبلغ المطلوب "
+            android:background="@drawable/txt_shape"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="50sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_bank"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:hint="اسم المصرف "
+            android:background="@drawable/txt_shape"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="50sp" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_eshaar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:hint="رقم اشعار التحويل "
+            android:background="@drawable/txt_shape"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="50sp" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_note"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:hint="ملاحظات "
+            android:background="@drawable/txt_shape"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="50sp" />
+
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/camera"
+            android:id="@+id/img_get_picture"
+             />
+    </LinearLayout>
+
+</ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="طلب تحويل الرصيد"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/bt_request_money"
+        android:background="@color/colorPrimary"
+        />
+</RelativeLayout>

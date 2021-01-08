@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="right"
+    tools:context="com.ma.hololstore.Activity.RequestServiceActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الخدمة"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الخدمة"
+        android:id="@+id/txt_service_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تفاصيل اضافية للخدمة"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:gravity="right"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+
+        android:id="@+id/txt_request_desc"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="المبلغ المطلوب تحويله"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:gravity="right"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+
+        android:id="@+id/txt_request_money"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رقم هاتف صاحب الخدمة"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_shape"
+        android:gravity="right"
+        android:padding="10dp"
+        android:inputType="phone"
+
+        android:id="@+id/txt_request_mobile"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الغاء الطلب"
+        android:id="@+id/bt_request_service"
+        android:layout_marginTop="20dp"
+        android:background="@color/red"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
+
+
+</LinearLayout>

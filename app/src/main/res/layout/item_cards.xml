@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:elevation="7dp"
+    app:cardCornerRadius="10dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+>
+    <ImageView
+    android:layout_width="0dp"
+    android:layout_weight="4"
+    android:layout_height="120dp"
+      android:scaleType="fitCenter"
+        android:src="@drawable/app_icon"
+    android:id="@+id/item_card_image"
+    />
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="6"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_card_image"
+        android:background="@color/white"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/item_card_name"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/item_card_buyer_price"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+         android:background="@color/white"
+         android:padding="7dp"
+        android:text="السعر للبائع 200 دينار"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

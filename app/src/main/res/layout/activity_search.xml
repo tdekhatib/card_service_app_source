@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SearchActivity">
+
+v
+
+
+    />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:textDirection="ltr"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="ltr"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_search"
+            android:padding="10dp"
+            android:hint="ادخل كلمة للبحث"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/button_background"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:id="@+id/bt_search"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="للأسف لا يوجد نتائج لعرضها"
+            android:id="@+id/txt_no_result"
+            android:layout_margin="20dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lst_ads"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            tools:listitem="@layout/item_search"
+            android:textDirection="rtl"
+            android:dividerHeight="5dp"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
