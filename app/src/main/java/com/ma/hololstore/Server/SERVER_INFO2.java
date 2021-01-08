@@ -68,6 +68,7 @@ public class SERVER_INFO2 {
     public  static String WSDL_TARGET_NAMESPACE = "http://tempuri.org/";
     private static String UPLOAD_TO_SERVER(String method,String id ,String data,Context ctx)
     {
+
         try {
             id = Config.Encrypt(id);
             data = Config.Encrypt(data);
